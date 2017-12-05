@@ -1,0 +1,32 @@
+---
+- hosts: webs
+  user: vagrant
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: ensure nginx is started
+    service:
+      name: nginx
+      state: started
+  - name: check nginx status
+    shell: service nginx status
+    register: status
+  - name: ensure nginx is restart
+    service:
+      name: nginx
+      state: restarted
+  - name: check curl hostname
+    shell: curl localhost
+  - name: check hostname
+    shell: uname -n
+#  handlers:
+#    - name: restart nginx
+#      service:
+#        name: nginx
+#        state: restarted
+  - name: print to stdout/stderr
+    command: hostname
+    register: hello
+  - debug: msg="{{ hello.stdout }}"
+
+
