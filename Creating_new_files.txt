@@ -1,0 +1,15 @@
+    On GitHub, navigate to the main page of the repository.
+
+    In your repository, browse to the folder where you want to create a file.
+
+    The New file buttonAbove the file list, click Create new file.
+
+    New file nameIn the file name field, type the name and extension for the file. To create subdirectories, type the / directory separator.
+    Content in new fileOn the Edit new file tab, add content to the file.
+    New file preview buttonTo review the new content, click Preview.
+
+    Commit message for your changeAt the bottom of the page, type a short, meaningful commit message that describes the change you made to the file.
+
+    Commit branch optionsBelow the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is master, you should choose to create a new branch for your commit and then create a pull request.
+
+    Commit new file buttonClick Propose new file.
